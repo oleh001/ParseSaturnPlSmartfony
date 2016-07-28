@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.tableProd {
+    width: 99%;
+    background: #FAE5E5;
+    margin: 10px 5px 7px;
+    text-align: center;
+}
+
+TR.head {
+    background: #D34240;
+}
+
+.head-prod {
+    font: 14px Verdana, Geneva, sans-serif;
+    color: #555;
+    border: 1px solid #ccc;
+    width: 20%;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+TR.even {
+    background: #D37573;
+}
+
+.body-prod {
+    font: 14px Verdana, Geneva, sans-serif;
+    color: #555;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+.body-numbe {
+    width: 10%;
+    height: 60px;
+    border: 1px solid #ccc;
+}
+
+.body-price {
+    width: 30%;
+    height: 60px;
+    border: 1px solid #ccc;
+}
