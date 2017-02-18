@@ -19,17 +19,20 @@ public class HtmlParse {
     public HtmlParse() {
         Document document = getDocument();
 
-        Elements linkHref = document.select("article.offer");
+        Elements linkHref = document.select("div.m-productItem");
         String key;
         String[] value;
+        //String value;
         for (Element ele : linkHref) {
-            key = ele.select("a.offer-title").text();
-            value = ele.select("span.statement").text().split(" ");
-            mapa.put(key, value[0] + " " + value[1]);
+            key = ele.select("a.js-product-name").text();
+            //value = ele.select("span.formatted-price__formatted-price__amount__3AiMe").text().split(" ");
+            value = ele.select("div.price").text().split(",");
+            mapa.put(key, value[0] + " zł");
+            //mapa.put(key, value);
         }
     }
 
-    private HashMap<String, String> mapa = new HashMap<>();
+    private HashMap<String, String> mapa = new HashMap<String, String>();
 
     public Document getDocument() {
         try {

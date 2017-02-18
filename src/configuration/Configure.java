@@ -9,7 +9,8 @@ public class Configure {
     public Configure() {
     }
 
-    private String filePath = "http://allegro.pl/listing/listing.php?order=m&string=iphone+6&bmatch=engagement-v6-promo-sm-sqm-dyn-fall-v2-ele-1-3-0205";
+
+    private String filePath = "https://saturn.pl/telefony-i-smartfony/smartfony";
 
     public String getFilePath() {
         return filePath;
@@ -19,7 +20,7 @@ public class Configure {
         this.filePath = filePath;
     }
 
-    private final String title = "Allegro.pl Parser";
+    private final String title = "Saturn.pl Parser";
 
     public String getTitle() {
         return title;
